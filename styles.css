@@ -20,11 +20,13 @@ body {
 .info-container,
 .quote-container,
 .signup-container {
-    padding: 0px 60px;
+    padding: 0px 180px;
 }
 
 .header {
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .content {
     display: flex;
@@ -42,11 +44,19 @@ body {
     font-size: 18px;
     color: #e5e7eb;
     display: flex;
+    gap: 20px;
 }
 
 .home-container {
     background-color: #1f2937;
     display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+
+.home-textbox {
+    flex: 1;
 }
 
 .home-title {
@@ -54,22 +64,39 @@ body {
     font-weight:bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #f9faf8;
+    margin: 0px;
+    padding-right: 150px;
 }
 
 .home-subtext {
     color: #e5e7eb;
+    margin: 0px;
+    padding-right: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 button.home-signup {
     font-size: 18px;
     color: #f9faf8;
     background-color: #3883f6;
+    border: none;
+    padding: 8px 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    
 }
 
 .img-placeholder {
     font-size: 18px;
     color: #f9faf8;
     background-color: #878787;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    width: auto;
 }
 
 ul {
@@ -85,75 +112,99 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
 }
 
 .info-title {
     font-weight: bold;
+    font-size: 36px;
+    padding-bottom: 20px;
 }
 
 .card-container {
     display: flex;
-    gap: 50px;
+    gap: 80px;
 
 }
 
 .card-box {
     display: flex;
     flex-direction: column;
-    width: 150px;
+    width: 180px;
     height: auto;
+    align-items: center;
     /* justify-content: center; */
 }
 
 .card-img {
-    width: 140px;
-    height: 100px;
+    width: 180px;
+    height: 180px;
     border: 5px solid #3883f6;
+    border-radius: 20px;
 }
 
 .card-text {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    text-align: center;
+    font-size: 18px;
 }
 
 .quote-container {
     background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
+    padding-left: 540px;
+    padding-right: 540px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .quote-text {
     font-size: 36px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     font-weight: lighter;
     color: #1f2937;
 }
 
 .quote-author {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
     color: black;
     align-self: flex-end;
+    margin:  0px;
+    padding: 0px;
 }
 
 .signup-container {
     color: #f9faf8;
-}
-
-.signup-text {
-    font-size: 24px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .signup-banner {
     background-color: #3883f6;
     display: flex;
     align-items: center;
+    border-radius: 10px;
+    padding: 70px 140px;
+    justify-content: space-between;
+}
+
+.signup-text p {
+    font-size: 24px;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
 }
 
 .signup-text p:nth-child(2){
     font-size: 18px;
     color: #e5e7eb;
+    padding: 5px 0px;
+    margin: 0px;
+    font-weight: 500;
 }
 
 .signup-banner button {
@@ -161,10 +212,14 @@ ul {
     border: 2px solid #f9faf8;
     color: #f9faf8;
     font-size: 18px;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 10px;
 }
 
 .footer {
     justify-content: center;
     color: #e5e7eb;
     font-size: 18px;
+    padding: 40px;
 }
